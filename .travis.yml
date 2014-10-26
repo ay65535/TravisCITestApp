@@ -7,7 +7,7 @@ jdk:
 env:
   matrix:
     - ANDROID_TARGET=android-18  ANDROID_ABI=armeabi-v7a  TRAVIS_BUILD_DIR=/home/travis/build/ay65535/TravisCITestApp/TravisCITestApp
-    - ANDROID_TARGET=android-19  ANDROID_ABI=armeabi-v7a  TRAVIS_BUILD_DIR=/home/travis/build/ay65535/TravisCITestApp/TravisCITestApp
+    #- ANDROID_TARGET=android-19  ANDROID_ABI=armeabi-v7a  TRAVIS_BUILD_DIR=/home/travis/build/ay65535/TravisCITestApp/TravisCITestApp
     - ANDROID_TARGET=android-21  ANDROID_ABI=armeabi-v7a  TRAVIS_BUILD_DIR=/home/travis/build/ay65535/TravisCITestApp/TravisCITestApp
 
 android:
@@ -16,10 +16,10 @@ android:
     - platform-tools
     - build-tools-21.0.2
     - android-21
-    - android-19
+    #- android-19
     - android-18
     - sys-img-armeabi-v7a-android-21
-    - sys-img-armeabi-v7a-android-19
+    #- sys-img-armeabi-v7a-android-19
     - sys-img-armeabi-v7a-android-18
     - extra-android-m2repository
     - extra-android-support
