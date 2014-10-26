@@ -27,9 +27,10 @@ android:
 before_install:
   - echo $TRAVIS_BUILD_DIR
   - export TRAVIS_BUILD_DIR=/home/travis/build/ay65535/TravisCITestApp/TravisCITestApp
+  - echo $TRAVIS_BUILD_DIR
   - cd TravisCITestApp
   - pwd
-  - cat /home/travis/build.sh
+  #- cat /home/travis/build.sh
   # Create and start emulator
   - echo no | android create avd --force -n test -t $ANDROID_TARGET --abi $ANDROID_ABI
   - emulator -avd test -no-skin -no-audio -no-window &
@@ -39,5 +40,4 @@ before_script:
   - adb shell input keyevent 82 &
 
 script:
-  - echo $TRAVIS_BUILD_DIR
   - ./gradlew connectedAndroidTest
