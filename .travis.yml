@@ -12,6 +12,7 @@ env:
 before_install:
   - echo $TRAVIS_BUILD_DIR
   - cd TravisCITestApp
+  - export TRAVIS_BUILD_DIR=$TRAVIS_BUILD_DIR/TravisCITestApp
 
 android:
   components:
